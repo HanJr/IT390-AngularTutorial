@@ -1,0 +1,9 @@
+<h2>{{g20Country.name}}'s Capital</h2>
+<div *ngIf="g20Country">
+  <label>name: 
+    <input [(ngModel)]="g20Country.name" placeholder="name"/>
+  </label>
+  <label> Capital:
+        <input [(ngModel)]="g20Country.capital" placeholder="capital"/>
+      </label>
+</div>

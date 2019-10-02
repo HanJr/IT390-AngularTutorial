@@ -1,14 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms'; 
 import { AppComponent } from './app.component';
+import { G20Component } from './g20/g20.component';
+import { CountryDetailComponent } from './country-detail/country-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    G20Component,
+    CountryDetailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,8 @@
+<h2>G20 Countries 2019</h2>
+<ul class="g20Countries">
+    <li *ngFor="let g20Country of g20Countries" (click)="onSelect(g20Country)" [class.selected]="g20Country === selectedCountry">
+        <span class = "badge">{{g20Country.name}}</span>
+    </li>
+</ul>
+
+<app-country-detail [g20Country]="selectedCountry"></app-country-detail>
